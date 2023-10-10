@@ -7,16 +7,39 @@
 
 #header {
     background-color: lightblue;
+    padding: 20px;
+    text-align: center;
 }
 
 #sidebar {
     background-color: lightcoral;
+    float: left;
+    width: 25%;
 }
 
 #main {
     background-color: lightpink;
+    float: right;
+    width: 75%;
+    padding: 20px;
 }
 
 #footer {
     background-color: lightgoldenrodyellow;
+    clear: both;
+    padding: 20px;
+    text-align: center;
+}
+
+li {
+    padding: 10px;
+}
+
+li:hover {
+    font-weight: bold;
+    background-color: brown;
+}
+
+h2 {
+    margin-bottom: 10px;
 }
