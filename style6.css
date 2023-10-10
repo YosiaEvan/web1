@@ -43,3 +43,9 @@ li:hover {
 h2 {
     margin-bottom: 10px;
 }
+
+img {
+    width: 200px;
+    float: right;
+    margin: 10px;
+}
