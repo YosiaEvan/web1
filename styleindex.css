@@ -61,12 +61,15 @@ footer {
     margin-top: 20px;
     background-color: #cdcdcd;
     padding: 20px;
-    text-align: center;
 }
 
 #footercontainer {
     display: flex;
     justify-content: space-between;
+}
+
+#footercontainer div {
+    width: 30%;
 }
 
 main div img {
@@ -80,5 +83,12 @@ h2 {
 }
 
 #copyright {
+    margin-top: 20px;
+    padding-top: 20px;
     border-top: 1px solid #343434;
 }
+
+#footercontainer ul li {
+    list-style-type: none;
+}
+
