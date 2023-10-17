@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "Pemrograman Web I"
+    "liveServer.settings.multiRootWorkspaceName": "Pemrograman Web I",
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "vscode-icons",
 }
