@@ -28,6 +28,10 @@ body {
     margin-right: 8px;
 }
 
+#menu img:hover {
+    cursor: pointer;
+}
+
 #menu a {
     font-size: 14px;
     font-weight: bolder;
