@@ -7,13 +7,23 @@
 }
 
 body {
-    width: 1100px;
+    width: 100%;
     margin: 0 auto;
+}
+
+#maincontent {
+    width: 1100px;
+    height: 6000px;
+    margin: 0 auto;
+    align-items: start;
 }
 
 #topnavbar {
     height: 46px;
     display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 0 60px 0 100px;
 }
 
 #menu {
@@ -169,10 +179,12 @@ nav li {
 
 #navbar li:hover {
     color: #fcc43f;
+    cursor: pointer;
 }
 
 #kategori li:hover {
     color: #562b77;
+    cursor: pointer;
 }
 
 h1 {
@@ -181,12 +193,145 @@ h1 {
     padding: 5px;
 }
 
+#maincontent #adv2 {
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100px;
+    margin: 10px auto;
+}
+
 #content {
     width: 65%;
     margin-left: 20px;
     padding-bottom: 50px;
     border-bottom: 3px solid #f0f0f0;
     float: left;
+}
+
+#content #zionsanvin {
+    margin-left: 20px;
+    border: 1px solid #cfd9de;
+    border-radius: 10px;
+    height: 900px;
+}
+
+#content #zionsanvin #toppage {
+    display: flex;
+    align-items: center;
+}
+
+#content #zionsanvin #toppage li, #content #zionsanvin #toppage a {
+    background-color: white;
+    margin: 0;
+}
+
+#content #zionsanvin #toppage #account {
+    margin-top: 5px;
+    width: 150px;
+}
+
+#content #zionsanvin #toppage #account a {
+    padding: 0;
+}
+
+#content #zionsanvin #toppage #account a span{
+    color: #006fd6;
+}
+
+#zionsimg {
+    width: 50px;
+    border-radius: 50px;
+}
+
+#verified {
+    width: 15px;
+}
+
+#xlogo {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 0;
+    left: 230px;
+}
+
+#content #zionsanvin p a {
+    color: #1d9bf0;
+    font-weight: 100;
+}
+
+#content #zionsanvin p a:hover {
+    text-decoration: underline;
+}
+
+#content #zionsanvin #zionsxiaomi14 {
+    width: 458px;
+    margin: 5px 20px;
+    border-radius: 20px;
+}
+
+#content #zionsanvin #datepost {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 91%;
+    margin: 0 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cfd9de;
+}
+
+#content #zionsanvin #datepost #timepost {
+    font-size: 13px;
+    font-weight: 100;
+    color: #536471;
+}
+
+#content #zionsanvin #datepost #timepost:hover {
+    text-decoration: underline;
+}
+
+#content #zionsanvin #datepost #info {
+    width: 20px;
+}
+
+#content #zionsanvin #xfiture {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 0 10px;
+}
+
+#content #zionsanvin li, #content #zionsanvin li a {
+    background-color: white;
+    font-size: 14px;
+    color: #536471;
+}
+
+#content #zionsanvin #share {
+    font-weight: bolder;
+}
+
+#content #zionsanvin #heart a:hover {
+    color: #f91880;
+    cursor: pointer;
+}
+
+#content #zionsanvin #comm a:hover {
+    color: #1d9bf0;
+    cursor: pointer;
+}
+
+#content #zionsanvin #share:hover {
+    color: #00cc00;
+    cursor: pointer;
+}
+
+#content #zionsanvin #xfiture img {
+    width: 14px;
 }
 
 #writer, .date {
@@ -258,6 +403,10 @@ iframe {
     border-radius: 4px;
 }
 
+#content li a:hover {
+    color: #562b77;
+}
+
 #adv {
     display: flex;
     background-color: #f8f8f8;
@@ -323,7 +472,7 @@ h3 {
     display: flex;
     width: 60%;
     height: 30px;
-    margin: auto;
+    margin: 0 auto;
     background-color: #f0f0f0;
     border-radius: 4px;
     align-items: center;
@@ -332,6 +481,11 @@ h3 {
 
 .viewmore a {
     font-size: 13px;
+    color: #aa248c;
+}
+
+.viewmore a:hover {
+    color: black;
 }
 
 .viewmore a span {
@@ -343,6 +497,14 @@ h3 {
     height: 80px;
     border-radius: 2px;
     transition: transform 0.3s;
+}
+
+#gadgetreview ul li a {
+    color: black;
+}
+
+#gadgetreview ul li a:hover {
+    color: #562b77;
 }
 
 #gadgetreview ul li a:hover img{
@@ -387,6 +549,15 @@ h3 {
     width: 150px;
     margin-right: 25px;
     transition: transform 0.3s;
+    color: black;
+}
+
+#video .flexdiv div a span:hover {
+    color: #562b77;
+}
+
+#foto .flexdiv div a span:hover {
+    color: #562b77;
 }
 
 #video .flexdiv div a:hover iframe {
@@ -572,10 +743,10 @@ h3 {
     color: #562b77;
 }
 
-#stickytopnews.topnews {
-    float: right;
-    clear: right;
+#sticky{
+    position: -webkit-sticky;
     position: sticky;
+    height: 420px;
     top: 0;
 }
 
@@ -626,4 +797,215 @@ h3 {
     border-bottom-right-radius: 15px;
     margin-bottom: 15px;
     font-size: 12px;
+}
+
+#commentlist {
+    float: left;
+    clear: left;
+    width: 65%;
+}
+
+#commentlist ul {
+    display: flex;
+    list-style-type: none;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-bottom: 5px solid #fcfcfc;
+}
+
+#commentlist li {
+    padding: 5px 15px;
+    margin-right: 10px;
+    font-size: 13px;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 15px;
+}
+
+#commentlist li a {
+    color: #999;
+}
+
+#commentlist li a:hover {
+    color: #244b9c;
+}
+
+#commentlist #terbaru {
+    background-color: #244b9c;
+}
+
+#commentlist #terbaru a {
+    color: #fff;
+}
+
+#commentlist #listdesc {
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+#commentlist #listdesc img {
+    width:100px;
+    height: 90px;
+}
+
+#commentlist #listdesc p {
+    padding-top: 10px;
+    font-weight: bolder;
+}
+
+#commentlist #listdesc #p-grey {
+    color: #999;
+    font-weight: 100;
+}
+
+#divider {
+    clear: both;
+    width: 100%;
+    height: 5px;
+    background-image: linear-gradient(to right,#562b77, #aa248c);
+}
+
+#footercontainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+}
+
+#footercontainer #footercontent {
+    display: flex;
+    width: 1100px;
+    margin: 50px auto;
+    align-items: stretch;
+}
+
+#footerimg {
+    width: 20%;
+    text-align: center;
+}
+
+#footerimg ul {
+    list-style-type: none;
+}
+
+#footerimg ul #detiklogo {
+    padding-bottom: 5px;
+}
+
+#footerimg li {
+    padding-bottom: 20px;
+}
+
+#footerimg ul #partof {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 0;
+    padding-left: 15px;
+    margin-left: 20px;
+    margin-bottom: 28px;
+}
+
+#footerimg ul #partof p {
+    font-size: 11px;
+    color: #666;
+    margin-right: 8px;
+}
+
+#socialmediaimg ul {
+    display: flex;
+}
+
+#socialmediaimg li {
+    margin: 0 auto;
+}
+
+#socialmediaimg p {
+    font-size: 11px;
+    padding-bottom: 10px;
+}
+
+#logodetikcom {
+    width: 200px;
+}
+
+#logodetiknetwork {
+    width: 80px;
+}
+#socialmediaimg img{
+    width: 32px;
+}
+
+#copyright {
+    font-size: 12px;
+    color: #666;
+}
+
+#footerkategori {
+    width: 25%;
+    margin-left: 20px;
+}
+
+#footerkategori p, .lastfooter p {
+    font-weight: bolder;
+    font-size: 14px;
+    padding-top: 0;
+    margin-bottom: 10px;
+}
+
+#footerkategori ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-left: 20px;
+    padding: 0;
+}
+
+#footerkategori li, .lastfooter li {
+    margin: 0;
+    padding: 2px 0;
+    width: 50%;
+}
+
+#footerkategori li a, .lastfooter li a {
+    font-size: 12px;
+    color: #666;
+    padding: 0;
+    margin-left: 0;
+    font-weight: 530;
+}
+
+#footerkategori li a:hover {
+    color: black;
+}
+
+.lastfooter li a:hover {
+    color: black;
+}
+
+.lastfooter {
+    width: 15%;
+    margin-left: 20px;
+}
+
+#jaringanmedia {
+    width: 20%;
+}
+
+.lastfooter ul {
+    list-style-type: none;
+    margin-left: 20px;
+    padding: 0;
+}
+
+button {
+    background-color: #244b9c;
+    padding: 5px 10px;
+    color: white;
+    border: 1px solid #244b9c;
+    border-radius: 7px;
 }
