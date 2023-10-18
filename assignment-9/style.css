@@ -212,7 +212,6 @@ h1 {
 }
 
 #content #zionsanvin {
-    margin-left: 20px;
     border: 1px solid #cfd9de;
     border-radius: 10px;
     height: 900px;
@@ -256,6 +255,10 @@ h1 {
     position: relative;
     top: 0;
     left: 230px;
+}
+
+#zionsanvin p {
+    margin-left: 10px;
 }
 
 #content #zionsanvin p a {
@@ -334,6 +337,23 @@ h1 {
     width: 14px;
 }
 
+#readreply {
+    text-align: center;
+    padding: 5px 0;
+    margin: 10px 20px;
+    border: 1px solid #cfd9de;
+    border-radius: 15px;
+}
+
+#readreply a {
+    font-size: 13px;
+    color: #006fd6;
+}
+
+#readreply:hover {
+    background-color: #a3d2ff;
+}
+
 #writer, .date {
     text-align: center;
     padding: 5px 0;
@@ -364,6 +384,10 @@ figcaption {
 
 article {
     width: 75%;
+}
+
+article p {
+    margin-left: 0;
 }
 
 iframe {
@@ -1003,9 +1027,13 @@ h3 {
 }
 
 button {
-    background-color: #244b9c;
-    padding: 5px 10px;
+    background-color: #21409a;
+    padding: 5px 12px;
     color: white;
-    border: 1px solid #244b9c;
+    border: 1px solid #21409a;
     border-radius: 7px;
+}
+
+button img {
+    width: 12px;
 }
