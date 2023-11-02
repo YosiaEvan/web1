@@ -227,7 +227,7 @@ h1 {
     margin: 0;
 }
 
-#content #zionsanvin #toppage #account {
+#account {
     margin-top: 5px;
     width: 150px;
 }
@@ -261,7 +261,7 @@ h1 {
     margin-left: 10px;
 }
 
-#content #zionsanvin p a {
+#zionsanvin p a {
     color: #1d9bf0;
     font-weight: 100;
 }
@@ -270,13 +270,13 @@ h1 {
     text-decoration: underline;
 }
 
-#content #zionsanvin #zionsxiaomi14 {
+#zionsxiaomi14 {
     width: 458px;
     margin: 5px 20px;
     border-radius: 20px;
 }
 
-#content #zionsanvin #datepost {
+#datepost {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -286,25 +286,24 @@ h1 {
     border-bottom: 1px solid #cfd9de;
 }
 
-#content #zionsanvin #datepost #timepost {
+#timepost {
     font-size: 13px;
     font-weight: 100;
     color: #536471;
 }
 
-#content #zionsanvin #datepost #timepost:hover {
+#timepost:hover {
     text-decoration: underline;
 }
 
-#content #zionsanvin #datepost #info {
+#info {
     width: 20px;
 }
 
-#content #zionsanvin #xfiture {
+#xfiture {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 0;
     margin: 0 10px;
 }
 
@@ -314,26 +313,26 @@ h1 {
     color: #536471;
 }
 
-#content #zionsanvin #share {
+#share {
     font-weight: bolder;
 }
 
-#content #zionsanvin #heart a:hover {
+#heart a:hover {
     color: #f91880;
     cursor: pointer;
 }
 
-#content #zionsanvin #comm a:hover {
+#comm a:hover {
     color: #1d9bf0;
     cursor: pointer;
 }
 
-#content #zionsanvin #share:hover {
+#share:hover {
     color: #00cc00;
     cursor: pointer;
 }
 
-#content #zionsanvin #xfiture img {
+#xfiture img {
     width: 14px;
 }
 
@@ -405,7 +404,7 @@ iframe {
     padding-bottom: 10px;
 }
 
-#baca p, a {
+#baca p, #baca a {
     font-weight: bolder;
 }
 
@@ -476,7 +475,6 @@ h3 {
 
 .topnews li, .topnews li a, #gadgetreview li, #gadgetreview li a{
     display: flex;
-    overflow: hidden;
 }
 
 .topnews li a span {
@@ -484,11 +482,11 @@ h3 {
     font-size: 20px;
 }
 
-.topnews li a p {
+.topnews p {
     color: black;
 }
 
-.topnews li a p:hover {
+.topnews p:hover {
     color: #562b77;
 }
 
@@ -516,38 +514,39 @@ h3 {
     font-size: 15px;
 }
 
-#gadgetreview ul li a img{
+#gadgetreview img{
     width: 120px;
     height: 80px;
     border-radius: 2px;
     transition: transform 0.3s;
 }
 
-#gadgetreview ul li a {
+#gadgetreview a {
     color: black;
 }
 
-#gadgetreview ul li a:hover {
+#gadgetreview a:hover {
     color: #562b77;
 }
 
-#gadgetreview ul li a:hover img{
+#gadgetreview a:hover img{
     width: 120px;
     height: 80px;
     transform: scale(1.1);
 }
 
-#gadgetreview ul li a .smalltext{
+#gadgetreview .smalltext{
     font-size: 12px;
     padding-bottom: 5px;
+    color: #aa248c;
 }
 
-#gadgetreview ul li a p{
+#gadgetreview p{
     font-size: 13px;
     padding-bottom: 5px;
 }
 
-#gadgetreview ul li a .date{
+#gadgetreview .date{
     margin-left: 18px;
     font-size: 12px;
     font-weight: 100;
@@ -563,28 +562,25 @@ h3 {
     flex-wrap: wrap;
 }
 
-#video .flexdiv, #foto .flexdiv {
+.flexdiv {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 10px 0;
 }
 
-#video .flexdiv div, #video .flexdiv div a, #foto .flexdiv div, #foto .flexdiv div a {
+.flexdiv div, .flexdiv div a {
     width: 150px;
     margin-right: 25px;
     transition: transform 0.3s;
     color: black;
 }
 
-#video .flexdiv div a span:hover {
+.flexdiv div a span:hover {
     color: #562b77;
 }
 
-#foto .flexdiv div a span:hover {
-    color: #562b77;
-}
-
-#video .flexdiv div a:hover iframe {
+.flexdiv div a:hover iframe {
     transform: scale(1.1);
 }
 
@@ -595,7 +591,6 @@ h3 {
 .vid {
     width: 150px;
     height: 100px;
-    margin: 0;
     border-radius: 5px;
 }
 
@@ -612,7 +607,6 @@ h3 {
 .fotoinet {
     width: 150px;
     height: 100px;
-    margin: 0;
     border-radius: 5px;
 }
 
@@ -627,13 +621,13 @@ h3 {
     border-bottom: 3px solid #f0f0f0;
 }
 
-#recomendation #spacebetween {
+#spacebetween {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-#recomendation #spacebetween a {
+#spacebetween a {
     font-size: 11px;
     font-weight: 100;
     color: black;
@@ -641,7 +635,6 @@ h3 {
 
 #recomendation .flexdiv {
     display: flex;
-    justify-content: space-between;
     width: 100%;
 }
 
@@ -656,8 +649,7 @@ h3 {
 }
 
 #recomendation .flexdiv div, #recomendation .flexdiv div a {
-    width: 220px;
-    margin-right: 25px;
+    width: 200px;
     transition: transform 0.3s;
 }
 
@@ -745,13 +737,13 @@ h3 {
     display: flex;
 }
 
-#topcomment .num {
+.num {
     color: #aa248c;
     font-weight: 100;
     text-align: center;
 }
 
-#topcomment .komentar {
+.komentar {
     color: #999;
     font-size: 11px;
     margin-left: 5px;
@@ -793,11 +785,10 @@ h3 {
 #comment input {
     width: 98%;
     border: none;
-    border-radius: 0;
     margin: 5px;
 }
 
-#comment #inputcomment {
+#inputcomment {
     display: flex;
     align-items: center;
     width: 98%;
@@ -809,7 +800,7 @@ h3 {
     background-color: #fff;
 }
 
-#comment #desc {
+#desc {
     display: flex;
     align-items: center;
     width: 98%;
@@ -866,24 +857,24 @@ h3 {
     color: #fff;
 }
 
-#commentlist #listdesc {
+#listdesc {
     padding-top: 10px;
     width: 100%;
     text-align: center;
     align-items: center;
 }
 
-#commentlist #listdesc img {
+#listdesc img {
     width:100px;
     height: 90px;
 }
 
-#commentlist #listdesc p {
+#listdesc p {
     padding-top: 10px;
     font-weight: bolder;
 }
 
-#commentlist #listdesc #p-grey {
+#listdesc #p-grey {
     color: #999;
     font-weight: 100;
 }
@@ -901,7 +892,7 @@ h3 {
     background-color: #f0f0f0;
 }
 
-#footercontainer #footercontent {
+#footercontent {
     display: flex;
     width: 1100px;
     margin: 50px auto;
@@ -928,7 +919,6 @@ h3 {
 #footerimg ul #partof {
     display: flex;
     align-items: flex-end;
-    padding-top: 0;
     padding-left: 15px;
     margin-left: 20px;
     margin-bottom: 28px;
@@ -977,7 +967,6 @@ h3 {
 #footerkategori p, .lastfooter p {
     font-weight: bolder;
     font-size: 14px;
-    padding-top: 0;
     margin-bottom: 10px;
 }
 
@@ -986,11 +975,9 @@ h3 {
     flex-wrap: wrap;
     list-style-type: none;
     margin-left: 20px;
-    padding: 0;
 }
 
 #footerkategori li, .lastfooter li {
-    margin: 0;
     padding: 2px 0;
     width: 50%;
 }
@@ -998,9 +985,6 @@ h3 {
 #footerkategori li a, .lastfooter li a {
     font-size: 12px;
     color: #666;
-    padding: 0;
-    margin-left: 0;
-    font-weight: 530;
 }
 
 #footerkategori li a:hover {
@@ -1023,7 +1007,6 @@ h3 {
 .lastfooter ul {
     list-style-type: none;
     margin-left: 20px;
-    padding: 0;
 }
 
 button {
