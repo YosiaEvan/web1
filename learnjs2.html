@@ -7,5 +7,36 @@
     </head>
     <body>
         <h1>Learn JS Part 2</h1>
+
+        <button onclick="myYosia()">Click me!</button>
+        
+        <script>
+            const pi = 3.14;
+            let x = 1;
+
+            x = 2;
+            // pi = 3;
+            console.log(x);
+            console.log(pi);
+
+            function myYosia() {
+                alert("My name is Yosia");
+                newFunction();
+            }
+
+            function newFunction() {
+                alert("I love JS!");
+            }
+
+            x = 3;
+            let y = 4;
+
+            function add(x, y) {
+                return x + y;
+            }
+
+            // myYosia();
+            document.write(add(x, y));
+        </script>
     </body>
 </html>
