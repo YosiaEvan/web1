@@ -9,7 +9,7 @@
         <h1>Learn JS Part 2</h1>
 
         <button onclick="myYosia()">Click me!</button>
-        
+
         <script>
             const pi = 3.14;
             let x = 1;
@@ -23,6 +23,8 @@
                 alert("My name is Yosia");
                 newFunction();
             }
+            
+            // myYosia();
 
             function newFunction() {
                 alert("I love JS!");
@@ -30,13 +32,33 @@
 
             x = 3;
             let y = 4;
+            let z = 2;
 
-            function add(x, y) {
-                return x + y;
+            function add(x, y, z) {
+                return x + y + z;
             }
 
-            // myYosia();
-            document.write(add(x, y));
+            function substract(a, b) {
+                return a - b;
+            }
+
+            document.write("<br>");
+            document.write(add(x, y, z));
+            document.write("<br>" + substract(y, z));
         </script>
+
+        <br><br>
+        Name: <input id="name" type="text"><button onclick="display()"> Send!</button>
+
+        <script>
+            function display() {
+                let name = document.getElementById("name").value;
+                // alert(name);
+                // document.write(name);
+                document.getElementById("ds").innerHTML = name;
+            }
+        </script>
+
+        <h2 id="ds"></h2>
     </body>
 </html>
