@@ -8,10 +8,10 @@
     <body>
         Input: <input type="number" id="num1">
         <select name="operation" id="operation">
-            <option value="plus">+</option>
-            <option value="min">-</option>
-            <option value="mul">*</option>
-            <option value="div">/</option>
+            <option value="add">+</option>
+            <option value="minus">-</option>
+            <option value="multi">*</option>
+            <option value="division">/</option>
         </select>
         <input type="number" id="num2">
         <button onclick="calculator()"> Send</button><br><br>
@@ -25,17 +25,17 @@
                 let result;
 
                 switch(operation) {
-                    case "plus":
+                    case "add":
                         add(num1, num2);
                         break;
-                    case "min":
-                        min(num1, num2);
+                    case "minus":
+                        minus(num1, num2);
                         break;
-                    case "mul":
-                        mul(num1, num2);
+                    case "multi":
+                        multi(num1, num2);
                         break;
-                    case "div":
-                        div(num1, num2);
+                    case "division":
+                        division(num1, num2);
                         break;
                 }
 
@@ -44,17 +44,17 @@
                     return result;
                 }
 
-                function min(num1, num2) {
+                function minus(num1, num2) {
                     result = num1 - num2;
                     return result;
                 }
                 
-                function mul(num1, num2) {
+                function multi(num1, num2) {
                     result = num1 * num2;
                     return result;
                 }
                 
-                function div(num1, num2) {
+                function division(num1, num2) {
                     result = num1 / num2;
                     return result;
                 }
