@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Learn JS Events</title>
+
+        <style>
+            .droptarget {
+                width: 100px;
+                height: 35px;
+                padding: 10px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body onload="loadFunction()">
+        <h1>Learning JS Event</h1>
+
+        <div onmouseover="overFunction()">
+            <p id="demo1">Mouse over me!</p>
+        </div>
+
+        <input type="text" onkeydown="downFunction()">
+        <p id="demo2"></p>
+
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Drag me!</p>
+        </div>
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+        <script>
+            let x = 0;
+            function overFunction() {
+                document.getElementById("demo1").innerHTML = x+=1;
+            }
+            function downFunction() {
+                document.getElementById("demo2").innerHTML = "You pressed a key inside the input";
+            }
+            function loadFunction() {
+                alert("Page is loaded");
+            }
+            function dragStart(event) {
+                event.dataTransfer.setData("Text", event.target.id);
+            }
+            function allowDrop(event) {
+                event.preventDefault();
+            }
+            function drop(event) {
+                event.preventDefault();
+                const data = event.dataTransfer.getData("Text");
+                event.target.appendChild(document.getElementById(data));
+            }
+        </script>
+    </body>
+</html>
