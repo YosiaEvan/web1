@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Style -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Font -->
+        <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <img src="img/logo-kimia-farma.png" alt="Logo Kimia Farma">
+            <div id="search-lang-navbar">
+                <div id="search-lang">
+                    <div id="search">
+                        <input type="text" placeholder="Search">
+                    </div>
+                    <div id="lang">
+                        <a href="https://www.kimiafarma.co.id/id">IND</a>
+                         | 
+                        <a href="https://www.kimiafarma.co.id/en">ENG</a>
+                    </div>
+                </div>
+                <nav id="navbar">
+                    <ul>
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="biodata.html">BIODATA</a>
+                        </li>
+                        <li>
+                            <a href="contact_us.html">CONTACT US</a>
+                        </li>
+                        <li>
+                            <a href="technical_documentation.html">TECHNICAL DOCUMENTATION</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Section -->
+        <main id="main-contactus">
+            <h1>Contact Us</h1>
+            <div class="border-bottom"></div>
+            <form name="myForm" onsubmit="return validateForm()" method="post">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Your full name...">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email...">
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Your username...">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+
+                <p>Gender</p>
+                <div id="gender-form">
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </div>
+
+                <label for="religion">Religion</label><br>
+                <select name="religion" id="religion">
+                    <option value="" selected disabled>Select Option</option>
+                    <option value="islam">Islam</option>
+                    <option value="christian">Christian</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="buddha">Buddha</option>
+                    <option value="konghucu">Konghucu</option>
+                </select><br>
+
+                <label for="address">Address</label><br>
+                <textarea name="address" id="address" value="Address" placeholder="Your address..."></textarea>
+
+                <p>Hobbies</p>
+                <div id="hobbies-form">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="reading" name="hobbies[]" value="Reading">
+                            <label for="reading">Reading</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="cooking" name="hobbies[]" value="Cooking">
+                            <label for="cooking">Cooking</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="gardening" name="hobbies[]" value="Gardening">
+                            <label for="gardening">Gardening</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="travelling" name="hobbies[]" value="Travelling">
+                            <label for="travelling">Travelling</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="hiking" name="hobbies[]" value="Hiking">
+                            <label for="hiking">Hiking</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="photography" name="hobbies[]" value="Photography">
+                            <label for="photography">Photography</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="painting" name="hobbies[]" value="Painting">
+                            <label for="painting">Painting</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="music" name="hobbies[]" value="Music">
+                            <label for="music">Music</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="sport" name="hobbies[]" value="Sport">
+                            <label for="sport">Sport</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="collecting" name="hobbies[]" value="Collecting">
+                            <label for="collecting">Collecting</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="other" name="hobbies[]" value="Other">
+                            <label for="other">Other</label>
+                        </li>
+                    </ul>                    
+                </div>
+                
+                <button type="submit" value="Save">Submit</button>
+            </form>
+        </main>
+        
+        <!-- Footer -->
+        <footer>
+            <!-- Contact Section -->
+            <div id="footer-contact">
+                <div id="kantor-pusat">
+                    <h4>Kantor Pusat</h4>
+                    <p>PT. KIMIA FARMA, TBK Jl. Veteran NO. 9 Jakarta Pusat - 10110</p>
+                </div>
+                <div id="hubungi-kami">
+                    <h4>Hubungi Kami</h4>
+                    <ul>
+                        <li>
+                            <a href="mailto:corsec@kimiafarma.co.id">Email</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/kimiafarmacare">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com/kimiafarmaind">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kimiafarma.ind">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.kimiafarma.co.id/id/hubungi-kami">Hubungi Kami</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="contact-center">
+                    <h4>Contact Center</h4>
+                    <p id="num">1-500-255</p>
+                    <p>24 hours</p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div id="copyright">
+                <a href="https://fti.unai.edu">FTI UNAI</a>
+                &middot;
+                <a href="https://unai.edu">UNAI Website</a>
+                <p>&copy; 2023 &middot; Kimia Farma. All Right Reserved</p>
+            </div>
+        </footer>
+
+        <script>
+            function validateForm() {
+                let fullName = document.forms["myForm"]["fullname"].value;
+                if(fullName == "") {
+                    alert("Name must be filled out");
+                    return false;
+                }
+                let email = document.forms["myForm"]["email"].value;
+                if(email == "") {
+                    alert("Email must be filled out");
+                    return false;
+                }
+                let userName = document.forms["myForm"]["username"].value;
+                if(userName == "") {
+                    alert("Username must be filled out");
+                    return false;
+                }
+                let pass = document.forms["myForm"]["password"].value;
+                if(pass == "") {
+                    alert("Password must be filled out");
+                    return false;
+                }
+                let gender = document.forms["myForm"]["gender"].value;
+                if(gender == "") {
+                    alert("Gender must be selected");
+                    return false;
+                }
+                let religion= document.forms["myForm"]["religion"].value;
+                if(religion == "") {
+                    alert("Religion must be filled out");
+                    return false;
+                }
+                let address = document.forms["myForm"]["address"].value;
+                if(address == "") {
+                    alert("Address must be filled out");
+                    return false;
+                }
+                let hobbies = document.querySelectorAll('input[type="checkbox"]:checked');
+                if(hobbies.length == 0) {
+                    alert("At least choose one hobbie");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
